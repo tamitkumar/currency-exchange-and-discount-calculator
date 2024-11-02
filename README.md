@@ -91,6 +91,22 @@ We can replace the below with given project
 ##8. Unit Testing
 1. Implemented unit tests with coverage more than 90% for services and controllers to ensure functionality is working as expected.
 2. Used mocking frameworks like Mockito for dependencies.
+
+##Run Boot
+###1. clone project from [GIT](https://github.com/tamitkumar/currency-exchange-and-discount-calculator.git)
+###2. configure lombok in IDE
+	A. download lombok.jar from [Lombok official website](https://projectlombok.org/download)
+	B. open terminal in download location of lombok.jar
+	C. run the command "java -jar lombok.jar" from your terminal
+	D. Enable Annotation Processing
+		1. Open STS.
+		2. Go to Window > Preferences.
+		3. Navigate to Java > Compiler > Annotation Processing.
+		4. Check the box for Enable annotation processing.
+		5. Also, under Java > Compiler > Annotation Processing > Factory Path, ensure that the Lombok jar is listed. If it’s not there, you may need to add it manually.
+3. build the project from maven clean install
+4. run the application mvn spring-boot:run
+5. hit http://localhost:8080/swagger-ui/index.html
 	
 
 
